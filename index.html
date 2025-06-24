@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадебное приглашение</title>
+  <style>
+    body {
+      font-family: 'Ouvality Cyrillic', serif;
+      margin: 0;
+      padding: 0;
+      background: url('A_silky_fabric_background_in_this_digital_photogra.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      text-shadow: 0 0 5px white;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+      background: none;
+      border: none;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2, h3, p, label, div, time {
+      color: #222;
+      text-align: center;
+      text-shadow: 0 0 5px white;
+    }
+
+    .names {
+      font-size: 40px;
+      font-family: 'Cormorant Garamond', serif;
+      text-align: center;
+      color: #222;
+      text-shadow: 0 0 5px white;
+    }
+
+    .date-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .date-block div {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .date-block .day {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 8px;
+      color: #222;
+      text-shadow: none;
+    }
+
+    .submit-button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 30px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-shadow: none;
+      font-size: 18px;
+    }
+
+    .timeline {
+      margin-top: 30px;
+      padding-left: 20px;
+      border-left: 2px solid #222;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .timeline-item time {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+      text-shadow: 0 0 5px white;
+    }
+
+    .timeline-item div {
+      margin-top: 5px;
+      color: #222;
+      text-shadow: 0 0 5px white;
+    }
+
+    .radio-group {
+      margin-top: 20px;
+      color: #222;
+      text-shadow: 0 0 5px white;
+    }
+
+    .radio-group label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      .date-block {
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h3>ПРИГЛАШЕНИЕ НА СВАДЬБУ</h3>
+    <div class="names">Натали<br/>Андрей</div>
+    <div class="date-block">
+      <div>август</div>
+      <div class="day">29</div>
+      <div>2025</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>ДОРОГИЕ<br/>РОДНЫЕ И ДРУЗЬЯ!</h2>
+    <p>С радостью приглашаем Вас на нашу свадьбу!<br/>
+      Мы счастливы объединить наши жизни и хотели бы<br/>
+      поделиться этим с Вами.</p>
+  </section>
+
+  <section>
+    <h2>МЕСТО ПРОВЕДЕНИЯ ТОРЖЕСТВА</h2>
+    <p>ЖДЕМ ВАС:<br/>«Петергоф лофт»<br/><br/>
+      ПО АДРЕСУ:<br/>территория Троицкая гора, д. 33</p>
+  </section>
+
+  <section>
+    <h2>ПЛАН ДНЯ</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <time>13:30</time>
+        <div>СБОР ГОСТЕЙ — встречаемся, настраиваемся на весёлую свадьбу, главное не опаздывать.</div>
+      </div>
+      <div class="timeline-item">
+        <time>14:00</time>
+        <div>РЕГИСТРАЦИЯ — немного радостных трогательных формальностей – то, ради чего собирались.</div>
+      </div>
+      <div class="timeline-item">
+        <time>15:00</time>
+        <div>БАНКЕТ — самое время для вкусной еды, развлечений и поздравлений.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>ДРЕСС-КОД</h2>
+    <p>Мы очень старались сделать праздник красивым<br/>
+      и будем рады, если в своих нарядах Вы поддержите<br/>
+      цветовую гамму нашей свадьбы!</p>
+  </section>
+
+  <section>
+    <h2>ДЕТАЛИ</h2>
+    <div class="icon">
+      <img src="6.png" alt="Подарок" width="60" />
+    </div>
+    <p>Свои тёплые слова и пожелания приносите в сердцах,<br/>
+      а подарки – в конверте.</p>
+  </section>
+
+  <section>
+    <h2>АНКЕТА</h2>
+    <p>Пожалуйста, подтвердите своё присутствие</p>
+    <form action="https://formsubmit.co/coolprosto11@gmail.com" method="POST">
+      <div class="form-group">
+        <label>Ваше Имя и Фамилия</label>
+        <input type="text" name="Имя и Фамилия" required />
+      </div>
+
+      <div class="radio-group">
+        <p>Вы сможете присутствовать на торжестве?</p>
+        <label><input type="radio" name="Присутствие" value="Да, обязательно приду/придем" required /> Да, обязательно приду/придем</label>
+        <label><input type="radio" name="Присутствие" value="К сожалению, не смогу прийти" /> К сожалению, не смогу прийти</label>
+        <label><input type="radio" name="Присутствие" value="Отвечу позже" /> Отвечу позже</label>
+      </div>
+
+      <div class="form-group">
+        <label>Если Вы будете со своей парой, пожалуйста, впишите имя</label>
+        <input type="text" name="Имя партнёра" />
+      </div>
+
+      <div class="radio-group" style="margin-top:40px;">
+        <h3>ЧТО ВЫ ПРЕДПОЧИТАЕТЕ ПИТЬ?</h3>
+        <label><input type="radio" name="Напиток" value="Водка" /> Водка</label>
+        <label><input type="radio" name="Напиток" value="Вино" /> Вино</label>
+        <label><input type="radio" name="Напиток" value="Шампанское" /> Шампанское</label>
+        <label><input type="radio" name="Напиток" value="Текила БУМ" /> Текила БУМ</label>
+        <label><input type="radio" name="Напиток" value="Коньяк" /> Коньяк</label>
+        <label>Другое:<br/><input type="text" name="Напиток-другое" placeholder="Напишите свой вариант" /></label>
+      </div>
+
+      <button type="submit" class="submit-button">ОТВЕТИТЬ</button>
+    </form>
+  </section>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
